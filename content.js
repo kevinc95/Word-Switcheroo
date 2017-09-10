@@ -1,6 +1,8 @@
+// Retrieves all text from current web page
 var elements = document.getElementsByTagName('*');
 
-
+// iterates through content, searching for 'from' word
+// if 'from' word is found, it will be changed to 'to' word
 for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
 
