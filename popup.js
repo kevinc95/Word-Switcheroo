@@ -1,3 +1,16 @@
+/**
+ * Listens for click event of the 'Change' button
+ * and executes click function when click event occurs
+ **/
+document.addEventListener('DOMContentLoaded', function() {
+	var d = document.getElementById("Change");
+	d.addEventListener('click', click);
+});
+
+/**
+ * Retrieves values typed into the 'from' and 'to' input fields
+ * and executes the content.js file
+ **/
 function click(e) {
 	
 	var elementIDs = {
@@ -12,8 +25,3 @@ function click(e) {
 	});
 	window.close;
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-	var d = document.getElementById("Change");
-	d.addEventListener('click', click);
-});
